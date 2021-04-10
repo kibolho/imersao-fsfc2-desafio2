@@ -1,13 +1,19 @@
 version: "3"
 services:
   api:
-    build: server-nest
+    build:
+      context: ./server-nest
+      dockerfile: .docker/nest.dockerfile
     ports:
       - "3000:3000"
-     
+    restart: always
+
   client:
-    build: client-react
+    build:
+      context: ./client-react
+      dockerfile: .docker/react.dockerfile
     ports:
       - "3001:3000"
     depends_on: 
       - api
+    restart: always
