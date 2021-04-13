@@ -35,6 +35,8 @@
   - [Technologies](#technologies)
 - [:rocket: Getting Started](#rocket-getting-started)
   - [:zap: To RUN](#zap-to-run)
+  - [Desafio 3 - Deploy no Kubernetes](#desafio-3---deploy-no-kubernetes)
+    - [Informações do desafio](#informações-do-desafio)
 - [:bulb: Contributing](#bulb-contributing)
 - [:memo: License](#memo-license)
 - [:e-mail: Contact](#e-mail-contact)
@@ -86,6 +88,17 @@ Run the commands below to install and run the app.
 
 [:arrow_up: Back to top](#table-of-Contents)
 
+## Desafio 3 - Deploy no Kubernetes
+
+### Informações do desafio
+Nesse desafio, você deverá gerar os manifestos yaml do Kubernetes (deployment e service) para o backend e o frontend que criados no desafio 2.
+
+Você NÃO precisa utilizar um Cloud Provider como AWS, GCP e Azure para realizar essa tarefa. Você pode realizar localmente a instalação do cluster utilizando o Kind (https://kind.sigs.k8s.io/).
+
+Crie uma pasta chamada k8s no seu repositório do github (utilizado no desafio anterior) e informe no campo abaixo.
+
+[:arrow_up: Back to top](#table-of-Contents)
+
 <!-- CONTRIBUTING -->
 # :bulb: Contributing
 
@@ -131,3 +144,5 @@ LinkedIn - <https://www.linkedin.com/in/abilioazevedo/>
 [:arrow_up: Back to top](#table-of-Contents)
 
 ![project preview](.github/logo.png)
+
+

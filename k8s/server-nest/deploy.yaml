@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-nest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: server-nest
+  template:
+    metadata:
+      name: server-nest
+      labels:
+        app.kubernetes.io/name: server-nest
+    spec:
+      containers:
+        - name: server-nest
+          image: kibolho/fsfc2-server-nest
+          ports:
+            - containerPort: 3000
